@@ -128,3 +128,52 @@ div {
         transform: rotate(360deg);
     }
 }
+
+@r:40px;
+#loader-4 {
+    width: 5%;
+    height: 5%;    
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    // animation: loader-4 5s infinite linear;
+    box-shadow: 0*@r @r 0 @border-color,
+    0.707*@r 0.707*@r 0 @border-color,
+    @r 0*@r 0 @highlight-color,
+    0.707*@r -0.707*@r 0 @border-color,
+    0*@r -@r 0 @border-color,
+    -0.707*@r -0.707*@r 0 @border-color,
+    -@r 0*@r 0 @border-color,
+    -0.707*@r 0.707*@r 0 @border-color;
+}
+
+@keyframes loader-4 {
+    0%{
+        transform: rotate(0deg);
+    }
+    12.5%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    37.5%{
+        transform: rotate(135deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    62.5%{
+        transform: rotate(225deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    87.5%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
