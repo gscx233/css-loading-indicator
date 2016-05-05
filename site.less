@@ -1,7 +1,6 @@
 @background-color: #ddd;
 @highlight-color: #66ccff;
 @border-color: white;
-
 body {
     margin: 0;
     //min-width: 800px;
@@ -129,51 +128,87 @@ div {
     }
 }
 
-@r:40px;
+@r: 40px;
 #loader-4 {
     width: 5%;
-    height: 5%;    
+    height: 5%;
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
     position: relative;
     // animation: loader-4 5s infinite linear;
-    box-shadow: 0*@r @r 0 @border-color,
-    0.707*@r 0.707*@r 0 @border-color,
-    @r 0*@r 0 @highlight-color,
-    0.707*@r -0.707*@r 0 @border-color,
-    0*@r -@r 0 @border-color,
-    -0.707*@r -0.707*@r 0 @border-color,
-    -@r 0*@r 0 @border-color,
-    -0.707*@r 0.707*@r 0 @border-color;
+    box-shadow: 0*@r @r 0 @border-color, 0.707*@r 0.707*@r 0 @border-color, @r 0*@r 0 @highlight-color, 0.707*@r -0.707*@r 0 @border-color, 0*@r -@r 0 @border-color, -0.707*@r -0.707*@r 0 @border-color, -@r 0*@r 0 @border-color, -0.707*@r 0.707*@r 0 @border-color;
 }
 
 @keyframes loader-4 {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    12.5%{
+    12.5% {
         transform: rotate(45deg);
     }
-    25%{
+    25% {
         transform: rotate(90deg);
     }
-    37.5%{
+    37.5% {
         transform: rotate(135deg);
     }
-    50%{
+    50% {
         transform: rotate(180deg);
     }
-    62.5%{
+    62.5% {
         transform: rotate(225deg);
     }
-    75%{
+    75% {
         transform: rotate(270deg);
     }
-    87.5%{
+    87.5% {
         transform: rotate(315deg);
     }
-    100%{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.loop(@i) when (@i > 0) {
+    &:nth-child(@{i}) {
+        width: @i * 10%;
+        height: @i * 10%;
+        // border: 2px solid @border-color;
+        border-left: 2px solid @highlight-color;
+        border-top: 2px solid @highlight-color;
+        display: inline-block;
+        border-radius: 50%;     
+        position: absolute;   
+        left: (10 - @i) * 5%;
+        top: (10 - @i) * 5%;        
+        animation: loader-5 2s ease infinite @i*0.1s;
+    }
+    .loop(@i - 1);
+}
+
+#loader-5{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    vertical-align: middle;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    div{    
+        .loop(10);
+    } 
+}
+
+
+@keyframes loader-5 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
         transform: rotate(360deg);
     }
 }
