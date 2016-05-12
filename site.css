@@ -1,21 +1,26 @@
 body {
   margin: 0;
 }
+
 div {
   border: 1px solid #ddd;
 }
+
 .header {
   width: 100%;
   height: 60px;
 }
+
 .main-content {
   max-width: 1366px;
   margin: 0 auto;
   background-color: #fafafa;
 }
+
 .footer {
   height: 40px;
 }
+
 .loader {
   width: 200px;
   height: 200px;
@@ -25,14 +30,16 @@ div {
   background-color: #ddd;
   text-align: center;
 }
+
 .cf {
   clear: both;
 }
-.cf::before,
-.cf::after {
+
+.cf::before, .cf::after {
   display: table;
   content: '';
 }
+
 #loader-1 {
   width: 50%;
   height: 50%;
@@ -43,6 +50,7 @@ div {
   border-radius: 30%;
   animation: rotate-720 2s infinite ease;
 }
+
 @keyframes rotate-360 {
   0% {
     transform: rotate(0deg);
@@ -51,6 +59,7 @@ div {
     transform: rotate(360deg);
   }
 }
+
 #loader-2 {
   width: 50%;
   height: 50%;
@@ -62,6 +71,7 @@ div {
   border-radius: 50%;
   animation: rotate-360 1s infinite linear;
 }
+
 #loader-3 {
   width: 50%;
   height: 50%;
@@ -72,6 +82,7 @@ div {
   position: relative;
   animation: rotate-360 5s infinite linear;
 }
+
 #loader-3:before {
   content: "";
   display: inline-block;
@@ -84,6 +95,7 @@ div {
   transform-origin: right;
   animation: rotate-360 2s infinite ease;
 }
+
 #loader-3:after {
   content: "";
   display: inline-block;
@@ -96,6 +108,7 @@ div {
   transform-origin: left;
   animation: rotate-360 2s infinite ease 0.5s;
 }
+
 #loader-4 {
   width: 5%;
   height: 5%;
@@ -105,6 +118,7 @@ div {
   position: relative;
   box-shadow: 0px 40px 0 white, 28.28px 28.28px 0 white, 40px 0px 0 #66ccff, 28.28px -28.28px 0 white, 0px -40px 0 white, -28.28px -28.28px 0 white, -40px 0px 0 white, -28.28px 28.28px 0 white;
 }
+
 @keyframes loader-4 {
   0% {
     transform: rotate(0deg);
@@ -134,6 +148,7 @@ div {
     transform: rotate(360deg);
   }
 }
+
 #loader-5 {
   position: relative;
   display: inline-block;
@@ -143,6 +158,7 @@ div {
   margin: 0 auto;
   transform: rotate(45deg);
 }
+
 #loader-5 div {
   border-left: 2px solid #66ccff;
   border-top: 2px solid #66ccff;
@@ -150,6 +166,7 @@ div {
   border-radius: 50%;
   position: absolute;
 }
+
 #loader-5 div:nth-child(10) {
   width: 100%;
   height: 100%;
@@ -157,6 +174,7 @@ div {
   top: 0%;
   animation: rotate-360 2s ease infinite 0.6s;
 }
+
 #loader-5 div:nth-child(9) {
   width: 90%;
   height: 90%;
@@ -164,6 +182,7 @@ div {
   top: 5%;
   animation: rotate-360 2s ease infinite 0.54s;
 }
+
 #loader-5 div:nth-child(8) {
   width: 80%;
   height: 80%;
@@ -171,6 +190,7 @@ div {
   top: 10%;
   animation: rotate-360 2s ease infinite 0.48s;
 }
+
 #loader-5 div:nth-child(7) {
   width: 70%;
   height: 70%;
@@ -178,6 +198,7 @@ div {
   top: 15%;
   animation: rotate-360 2s ease infinite 0.42s;
 }
+
 #loader-5 div:nth-child(6) {
   width: 60%;
   height: 60%;
@@ -185,6 +206,7 @@ div {
   top: 20%;
   animation: rotate-360 2s ease infinite 0.36s;
 }
+
 #loader-5 div:nth-child(5) {
   width: 50%;
   height: 50%;
@@ -192,6 +214,7 @@ div {
   top: 25%;
   animation: rotate-360 2s ease infinite 0.3s;
 }
+
 #loader-5 div:nth-child(4) {
   width: 40%;
   height: 40%;
@@ -199,6 +222,7 @@ div {
   top: 30%;
   animation: rotate-360 2s ease infinite 0.24s;
 }
+
 #loader-5 div:nth-child(3) {
   width: 30%;
   height: 30%;
@@ -206,6 +230,7 @@ div {
   top: 35%;
   animation: rotate-360 2s ease infinite 0.18s;
 }
+
 #loader-5 div:nth-child(2) {
   width: 20%;
   height: 20%;
@@ -213,6 +238,7 @@ div {
   top: 40%;
   animation: rotate-360 2s ease infinite 0.12s;
 }
+
 #loader-5 div:nth-child(1) {
   width: 10%;
   height: 10%;
@@ -220,6 +246,7 @@ div {
   top: 45%;
   animation: rotate-360 2s ease infinite 0.06s;
 }
+
 .little-bar {
   height: 60px;
   width: 10px;
@@ -228,6 +255,7 @@ div {
   vertical-align: middle;
   position: relative;
 }
+
 #loader-6 {
   height: 60px;
   width: 10px;
@@ -237,6 +265,7 @@ div {
   position: relative;
   animation: scale-y-101 linear 0.9s infinite 0.3s;
 }
+
 #loader-6::before {
   height: 60px;
   width: 10px;
@@ -249,6 +278,7 @@ div {
   position: absolute;
   animation: scale-y-101 linear 0.9s infinite;
 }
+
 #loader-6::after {
   height: 60px;
   width: 10px;
@@ -261,6 +291,7 @@ div {
   position: absolute;
   animation: scale-y-101 linear 0.9s infinite 0.6s;
 }
+
 @keyframes scale-y-101 {
   0% {
     transform: scaleY(1);
@@ -272,6 +303,7 @@ div {
     transform: scaleY(1);
   }
 }
+
 #loader-7 {
   height: 50%;
   width: 50%;
@@ -280,6 +312,7 @@ div {
   vertical-align: middle;
   animation: rotate-360 10s infinite linear;
 }
+
 #loader-7 div {
   height: 10px;
   width: 10px;
@@ -289,21 +322,27 @@ div {
   position: absolute;
   transform-origin: 0 420%;
 }
+
 #loader-7 div:nth-child(5) {
   animation: rotate-360 2s infinite cubic-bezier(0.8, 0, 0.2, 1) 0.8s;
 }
+
 #loader-7 div:nth-child(4) {
   animation: rotate-360 2s infinite cubic-bezier(0.8, 0, 0.2, 1) 0.64s;
 }
+
 #loader-7 div:nth-child(3) {
   animation: rotate-360 2s infinite cubic-bezier(0.8, 0, 0.2, 1) 0.48s;
 }
+
 #loader-7 div:nth-child(2) {
   animation: rotate-360 2s infinite cubic-bezier(0.8, 0, 0.2, 1) 0.32s;
 }
+
 #loader-7 div:nth-child(1) {
   animation: rotate-360 2s infinite cubic-bezier(0.8, 0, 0.2, 1) 0.16s;
 }
+
 @keyframes rotate-720 {
   0% {
     transform: rotate(0deg);
