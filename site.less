@@ -240,11 +240,12 @@ div {
         height: 10px;
         width: 10px;
         // border: 1px solid @border-color;
+        border:none;
         background-color: @highlight-color;
         border-radius: 50%; 
         display: inline-block;
         position: absolute;        
-        transform-origin: 0 420%;
+        transform-origin: 0 500%;
     }
 }
 
@@ -260,7 +261,46 @@ div {
     }
     100%{
         transform: rotate(720deg);
-    }
-    
+    }    
 }
 
+
+// #loader-8{
+//     width: 50%;
+//     height: 50%;
+//     display: inline-block;
+//     vertical-align: middle;
+//     margin: 0 auto;
+//     background: red;
+//     transition: all 1s linear;
+//     &:hover{
+//         animation: niji 8s linear infinite;
+//     }
+// }
+
+@keyframes niji{
+    0%{
+        background: red;
+    }
+    14%{
+        background: orange;
+    }
+    28%{
+        background: yellow;
+    }
+    43%{
+        background: green;
+    }
+    57%{
+        background: cyan;
+    }
+    72%{
+        background: blue;
+    }
+    86%{
+        background: purple;
+    } 
+    100%{
+        background: red;
+    }   
+}

@@ -283,11 +283,12 @@ div {
 #loader-7 div {
   height: 10px;
   width: 10px;
+  border: none;
   background-color: #66ccff;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  transform-origin: 0 420%;
+  transform-origin: 0 500%;
 }
 #loader-7 div:nth-child(5) {
   animation: rotate-360 2s infinite cubic-bezier(0.8, 0, 0.2, 1) 0.8s;
@@ -316,5 +317,31 @@ div {
   }
   100% {
     transform: rotate(720deg);
+  }
+}
+@keyframes niji {
+  0% {
+    background: red;
+  }
+  14% {
+    background: orange;
+  }
+  28% {
+    background: yellow;
+  }
+  43% {
+    background: green;
+  }
+  57% {
+    background: cyan;
+  }
+  72% {
+    background: blue;
+  }
+  86% {
+    background: purple;
+  }
+  100% {
+    background: red;
   }
 }
